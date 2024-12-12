@@ -1,0 +1,138 @@
+﻿<%@ master language="c#" autoeventwireup="true" codebehind="site.master.cs" inherits="muzainkonkrete.site" %>
+
+<!doctype html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+
+    <script src="scripts/jquery-1.11.2.js"></script>
+    <link href="bootstrap-3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="bootstrap-3.3.6/js/bootstrap.min.js"></script>
+
+
+    <link href="css/custom.css" rel="stylesheet" />
+    <script src="scripts/jquery-ui.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/move-top.js"></script>
+
+    <asp:contentplaceholder id="head" runat="server">
+    </asp:contentplaceholder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <!--menu begins-->
+     <%--   <div class="row one">
+            <div class="row col-md-3">
+                <div class="col-md-12" style="background-color: #00bcd5;">
+                    <div class="col-md-12">
+                          <div class="col-md-12" style="display: inline;background-color:#00bcd5;">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <h1 style="color: black; font-family: impact; font-weight: 900">muzain</h1>
+                                    </td>
+                                    <td>
+                                        <h1 style="color: white; font-family: impact; font-weight: 900">konkrete</h1>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                          <div class="row col-md-6">
+                            <div class=" row col-md-12">
+                                <nav class="navbar navbar-nav nav-stacked" role="navigation">
+                                    <div class="col-md-12">
+                                        <ul class="nav navbar-nav menu">
+                                            <li class="active menu"><a href="default.aspx">
+                                                <h4 style="color: black;">home</h4>
+                                            </a></li>
+                                            <li>
+                                            </li>
+                                            <li class="menu"><a href="default.aspx#about">
+                                                <h4 style="color: black;">about us</h4>
+                                            </a></li>
+                                            <li class="menu"><a href="default.aspx#companypro">
+                                                <h4 style="color: black;">company profile</h4>
+                                            </a></li>
+                                            <li class="menu"><a href="rccpipes.aspx">
+                                                <h4 style="color: black;">products & manufacturing</h4>
+                                            </a></li>
+                                            <li class="menu"><a href="customers.aspx">
+                                                <h4 style="color: black;">customer base</h4>
+                                            </a></li>
+                                            <li class="menu"><a href="management.aspx">
+                                                <h4 style="color: black;"> management</h4>
+                                            </a></li>
+                                            <li class="menu"><a href="contactus.aspx">
+                                                <h4 style="color: black;">contact us</h4>
+                                            </a></li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-md-9" style="background-color: #262626;color:white; height:27px">
+                    <p style="display:inline; float:right">links...</p>
+                   
+                </div>
+            <div class="row col-md-9" id="slide">
+               
+                <div id="slider" class="carousel slide" data-ride="carousel">
+
+                    <ol class="carousel-indicators">
+                        <li data-target="#slider" data-slide-to="0" class="active"></li>
+                        <li data-target="#slider" data-slide-to="1"></li>
+                        <li data-target="#slider" data-slide-to="2"></li>
+                        <li data-target="#slider" data-slide-to="3"></li>
+                        <li data-target="#slider" data-slide-to="4"></li>
+                        <li data-target="#slider" data-slide-to="5"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="images/slider/slider1.jpg" />
+                        </div>
+
+                        <% <div class="item">
+        <img src="images/slider/office.jpg" />
+      </div>
+    
+      <div class="item">
+        <img src="images/slider/office02.jpg"/>
+      </div>
+                     <div class="item">
+                            <img src="images/slider/slider2.jpg" />
+                        </div>
+                        <div class="item">
+                            <img src="images/slider/slider3.jpg" />
+                        </div>
+                        <div class="item">
+                            <img src="images/slider/slider4.jpg" />
+                        </div>
+                       <a class="left carousel-control" href="#slider" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span></a>
+                        <a class="right carousel-control" href="#slider" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <div>
+          <asp:contentplaceholder id="contentplaceholder1" runat="server">
+            </asp:contentplaceholder>
+        
+    </form>
+</body>
+</html>
